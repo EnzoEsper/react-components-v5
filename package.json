@@ -1,6 +1,6 @@
 {
   "name": "@nbcs/rcv5",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Prueba React Components V5",
   "keywords": [
     "react",
@@ -14,9 +14,9 @@
   ],
   "main": "./dist/react-components-v5.index.umd.js",
   "module": "./dist/react-components-v5.index.es.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/react-components-v5.index.es.js",
       "require": "./dist/react-components-v5.index.umd.js"
     }
