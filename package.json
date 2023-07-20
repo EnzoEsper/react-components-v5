@@ -1,6 +1,6 @@
 {
   "name": "@nbcs/rcv5",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Prueba React Components V5",
   "keywords": [
     "react",
@@ -12,13 +12,11 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/react-components-v5.umd.js",
-  "module": "./dist/react-components-v5.es.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/react-components-v5.es.js",
-      "require": "./dist/react-components-v5.umd.js"
+      "require": "./dist/react-components-v5.cjs.js"
     }
   },
   "author": "Enzo Esper",
@@ -35,23 +33,23 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "react": ">=18.2.0",
-    "react-dom": ">=18.2.0",
-    "@mui/material": ">=5.13.6",
     "@emotion/react": ">=11.11.1",
     "@emotion/styled": ">=11.11.0",
     "@fontsource/roboto": ">=5.0.3",
-    "@mui/icons-material": ">=5.11.16"
+    "@mui/icons-material": ">=5.11.16",
+    "@mui/material": ">=5.13.6",
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/react": ">=11.11.1",
+    "@emotion/styled": ">=11.11.0",
     "@fontsource/material-icons": "^5.0.3",
-    "@fontsource/roboto": "^5.0.3",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@fontsource/roboto": ">=5.0.3",
+    "@mui/icons-material": ">=5.11.16",
+    "@mui/material": ">=5.13.6",
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.23",
@@ -75,6 +73,7 @@
     "storybook": "^7.0.23",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
-    "vite-plugin-dts": "^3.0.0-beta.2"
+    "vite-plugin-dts": "^3.0.0-beta.2",
+    "vite-tsconfig-paths": "^4.2.0"
   }
 }

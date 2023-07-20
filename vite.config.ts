@@ -2,11 +2,13 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import { resolve } from 'path'
+import tsConfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    tsConfigPaths(),
     dts({
       insertTypesEntry: true,
       include: ['src'],
@@ -15,8 +17,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'reactComponentsV5',
-      formats: ['es', 'umd'],
+      name: 'react-components-v5',
+      formats: ['es', 'cjs'],
       fileName: (format) => `react-components-v5.${format}.js`,
     },
     rollupOptions: {
