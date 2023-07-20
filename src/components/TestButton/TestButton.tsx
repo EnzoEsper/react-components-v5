@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 
-export const TestButton = () => {
+const TestButton = () => {
   return <Button>TestButton</Button>
 }
 
-// export default TestButton
+export default TestButton
