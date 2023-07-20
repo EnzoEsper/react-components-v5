@@ -7,4 +7,5 @@ export interface TestChipProps extends ChipBaseProps {
   label: string
 }
 
-export const TestChip = ({ ...rest }: TestChipProps) => <Chip {...rest} />
+const TestChip = ({ ...rest }: TestChipProps) => <Chip {...rest} />
+export default TestChip
