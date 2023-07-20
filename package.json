@@ -12,13 +12,11 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/react-components-v5.umd.js",
-  "module": "./dist/react-components-v5.es.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/react-components-v5.es.js",
-      "require": "./dist/react-components-v5.umd.js"
+      "require": "./dist/react-components-v5.cjs.js"
     }
   },
   "author": "Enzo Esper",

@@ -8,7 +8,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -16,7 +16,6 @@
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "declarationMap": true,
     "baseUrl": ".",
     "paths": {
       "react-components-v5": ["src/index.ts"],
