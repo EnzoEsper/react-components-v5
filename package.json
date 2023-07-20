@@ -1,6 +1,6 @@
 {
   "name": "@nbcs/rcv5",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Prueba React Components V5",
   "keywords": [
     "react",
@@ -12,13 +12,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/react-components-v5.index.umd.js",
-  "module": "./dist/react-components-v5.index.es.js",
+  "main": "./dist/react-components-v5.umd.js",
+  "module": "./dist/react-components-v5.es.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/react-components-v5.index.es.js",
-      "require": "./dist/react-components-v5.index.umd.js"
+      "import": "./dist/react-components-v5.es.js",
+      "require": "./dist/react-components-v5.umd.js"
     }
   },
   "author": "Enzo Esper",

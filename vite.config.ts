@@ -17,7 +17,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'reactComponentsV5',
       formats: ['es', 'umd'],
-      fileName: (format, entry) => `react-components-v5.${entry}.${format}.js`,
+      fileName: (format) => `react-components-v5.${format}.js`,
     },
     rollupOptions: {
       // An array of module IDs to exclude from the final bundle
